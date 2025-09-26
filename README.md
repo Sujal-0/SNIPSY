@@ -1,16 +1,109 @@
-<<<<<<< HEAD
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎨 SNIPSY
 
-Currently, two official plugins are available:
+Create and share beautiful images of your source code snippets
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![GitHub](https://img.shields.io/github/license/Sujal-0/SNIPSY)
+![GitHub stars](https://img.shields.io/github/stars/Sujal-0/SNIPSY)
+![GitHub issues](https://img.shields.io/github/issues/Sujal-0/SNIPSY)
 
-## Expanding the ESLint configuration
+<img src="public/screenshot.png" alt="Snipsy Screenshot" width="600px"/>
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# SNIPSY
->>>>>>> a99fbef6fbf6cc903b1c142bc0420aa4b7c4eb5f
+</div>
+
+## ✨ Features
+
+- 🎨 Multiple theme options (VS Code Dark, Light, GitHub themes, and more)
+- 💻 Support for 15+ programming languages
+- 📏 Customizable font size and line height
+- 🖼️ Export as high-quality PNG images
+- 🎯 Simple and intuitive interface
+- 🚀 Fast and responsive
+- 📱 Mobile-friendly design
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Sujal-0/SNIPSY.git
+
+# Navigate to project directory
+cd SNIPSY
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/) - Frontend framework
+- [Vite](https://vitejs.dev/) - Build tool
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/) - Code editor
+- [html2canvas](https://html2canvas.hertzen.com/) - Screenshot capture
+
+## 🎨 Supported Themes
+
+- VS Code Dark/Light
+- GitHub Dark/Light
+- Dracula
+- One Dark
+- Nord
+- Solarized Dark/Light
+- Monokai
+- Cobalt
+- Ayu Dark
+- Gruvbox Dark
+- Material Darker
+
+## 💻 Supported Languages
+
+- JavaScript
+- TypeScript
+- Python
+- Java
+- C/C++
+- HTML
+- CSS
+- SQL
+- PHP
+- Ruby
+- Go
+- Swift
+- Kotlin
+- R
+- XML
+- JSON
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/Sujal-0/SNIPSY/issues).
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Sujal Singh**
+
+- Github: [@Sujal-0](https://github.com/Sujal-0)
+
+## ⭐️ Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+<div align="center">
+Made with ❤️ by Sujal Singh
+</div>
