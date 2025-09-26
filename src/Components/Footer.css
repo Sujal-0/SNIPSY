@@ -1,0 +1,14 @@
+.footer {
+    background-color: #001524; /* Same color as the header */
+    color: #D5CEA3; /* Text color to match the theme */
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    bottom: 0;
+    position: static; /* Allow the footer to move with the content */
+    left: 0;
+    margin-top: auto; /* Push the footer to the bottom when content is smaller */
+    margin-bottom: -30px;
+}
