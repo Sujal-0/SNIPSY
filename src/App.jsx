@@ -5,10 +5,10 @@ import Footer from "./Components/Footer";
 import themeStyles from "./utils/themeStyles";
 import ThemeSelector from "./Components/ThemeSelector";
 import LanguageSelector from "./Components/LanguageSelector";
-import FontSizeInput from "./Components/FontSizeInput"; // Import the FontSizeInput component
-import LineHeightInput from "./Components/LineHeightInput"; // Import the new LineHeightInput component
+import FontSizeInput from "./Components/FontSizeInput";
+import LineHeightInput from "./Components/LineHeightInput";
 import TopDots from "./Components/TopDots";
-import { handleEditorDidMount } from "./utils/editorUtils"; // Import the function
+import { handleEditorDidMount } from "./utils/editorUtils";
 import "./App.css";
 
 export default function CodeEditor() {
@@ -82,7 +82,7 @@ repeat();
             onChange={(value) => setCode(value)}
             onMount={(editor, monaco) =>
               handleEditorDidMount(editor, monaco, setHeight)
-            } // Use the imported function
+            }
             options={{
               fontSize: fontSize,
               lineHeight: lineHeight,
