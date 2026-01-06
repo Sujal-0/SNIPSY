@@ -276,14 +276,29 @@ repeat();
               lineHeight,
               minimap: { enabled: false },
               scrollBeyondLastLine: false,
+
+              wordWrap: "on",
+              wordWrapColumn: 80,
+              wrappingIndent: "same",
+
+              insertSpaces: true,
+              tabSize: 2,
+              detectIndentation: false,
+
+              automaticLayout: true,
+
               scrollbar: {
                 vertical: "hidden",
                 horizontal: "hidden",
                 handleMouseWheel: false,
               },
+
               overviewRulerLanes: 0,
               hideCursorInOverviewRuler: true,
               lineNumbers: "off",
+
+              formatOnPaste: true,
+              formatOnType: true,
             }}
           />
         </div>
