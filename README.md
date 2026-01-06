@@ -18,6 +18,11 @@ Create and share beautiful images of your source code snippets
 - 💻 Support for 15+ programming languages
 - 📏 Customizable font size and line height
 - 🖼️ Export as high-quality PNG images
+- 📋 **Copy to clipboard** — copy the generated image directly to your clipboard for fast sharing
+- 🔗 **Shareable links** — generate a URL that recreates your snippet (copied to clipboard)
+- ♻️ **Reset to defaults** — quickly return the editor to the initial state
+- 💾 **Auto-save** — your current snippet is stored in localStorage so you don't lose work
+- 🧼 **Transparent editor backgrounds** — clean, transparent exports for seamless images
 - 🎯 Simple and intuitive interface
 - 🚀 Fast and responsive
 - 📱 Mobile-friendly design
