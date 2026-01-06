@@ -4,12 +4,12 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes up the full height */
-  background-color: #001524; /* Match the theme */
+  min-height: 100vh;
+  background-color: #001524;
 }
 
 .container {
-  flex: 1; /* Allow the container to grow and push the footer down */
+  flex: 1;
   display: flex;
   flex-direction: column;
   background-color: #001524;
@@ -30,95 +30,133 @@ body {
 
 .subtitle {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-weight: 400;
   color: #D5CEA3;
   font-size: 18px;
 }
 
 .code-box {
-  /* background-color: #2c5e56; */
   transition: background-color 0.3s ease;
   border-radius: 24px;
   padding: 24px;
   width: 50%;
   max-width: 900px;
-  margin: 40px auto 0 auto;
+  margin: 16px auto 0 auto; 
   box-shadow: 20px 20px 0 0 black;
   border: #000 solid 5px;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto;
+  overflow-y: auto;
   white-space: pre;
 }
 
+/* Force the Monaco Editor to have transparent background */
+.code-box .monaco-editor,
+.code-box .monaco-editor .overflow-guard,
+.code-box .monaco-editor .monaco-scrollable-element {
+  background: transparent !important;
+}
+
+/* REMOVE THE BLUE FOCUS BORDER */
+.code-box .monaco-editor .inputarea.ime-input,
+.code-box .monaco-editor .lines-content,
+.code-box .monaco-editor,
+.code-box .monaco-editor .view-lines,
+.code-box .monaco-editor .overflow-guard,
+.code-box .monaco-editor-background,
+.code-box .monaco-editor .margin {
+  outline: none !important;
+  border: none !important;
+}
 
 .top-dots {
   display: flex;
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: -20px; /* Push the dots slightly to the top */
+  margin-top: -20px;
   margin-left: 22px;
-  gap: 8px; /* Add spacing between the dots */
+  gap: 8px;
 }
 
 .top-dots img {
-  width: 50px; /* Make the dots smaller */
-  height: 50px; /* Maintain aspect ratio */
+  width: 50px;
+  height: 50px;
 }
 
-
-/* Language dropdown, font size, and line height inputs */
 .controls select,
 .controls input {
-  background-color: #02101a; /* Match the code-box background */
-  color: #a6a6a6; /* White text for readability */
-  border: 1px solid #444; /* Subtle border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px 30px; /* Add padding for better usability */
-  font-family: "Black Ops One", system-ui, sans-serif; /* Match the font style */
-  font-size: 16px; /* Consistent font size */
-  outline: none; /* Remove default focus outline */
-  transition: all 0.3s ease; /* Smooth hover and focus transitions */
-  width: 150px; /* Set a consistent width */
-  text-align: center; /* Center the text */
+  background-color: #02101a;
+  color: #a6a6a6;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px 30px;
+  font-family: "Black Ops One", system-ui, sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 150px;
+  text-align: center;
 }
 
-/* Hover effect for inputs */
 .controls select:hover,
 .controls input:hover {
-  background-color: #04111a94; /* Slightly lighter background on hover */
-  border-color: #666; /* Highlight border on hover */
+  background-color: #04111a94;
+  border-color: #666;
 }
 
-/* Focus effect for inputs */
 .controls select:focus,
 .controls input:focus {
-  background-color: #02101a; /* Match hover background */
-  border-color: #666; /* Highlight border with accent color */
-  box-shadow: 0 0 5px #666; /* Add a glowing effect */
+  background-color: #02101a;
+  border-color: #666;
+  box-shadow: 0 0 5px #666;
 }
 
-/* Layout for controls */
 .controls {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px; /* Add spacing between controls */
-  margin-bottom: 20px; /* Add spacing below controls */
+  gap: 16px;
+  margin-bottom: 28px; /* moved down slightly */
 }
 
 .export-btn {
-  background-color: #02101a; /* Match the code-box background */
-  color: #a6a6a6; /* White text for readability */
-  border: 1px solid #444; /* Subtle border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px 30px; /* Add padding for better usability */
-  font-family: "Black Ops One", system-ui, sans-serif; /* Match the font style */
-  font-size: 16px; /* Consistent font size */
-  outline: none; /* Remove default focus outline */
-  transition: all 0.3s ease; /* Smooth hover and focus transitions */
-  width: 150px; /* Set a consistent width */
-  text-align: center; /* Center the text */
-  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #02101a;
+  color: #a6a6a6;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px 30px;
+  font-family: "Black Ops One", system-ui, sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
 }
+
+.snippet-name {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Black Ops One", system-ui, sans-serif;
+  color: #d5cea3;
+  margin: 12px auto 6px auto; /* more top margin, less bottom */
+  text-align: center;
+  width: 300px;
+}
+
+.snippet-name::placeholder {
+  color: #777;
+}
+
+.reset-btn {
+  background-color: #8B0000 !important; /* Dark red background */
+}
+
+.reset-btn:hover {
+  background-color: #A52A2A !important; /* Lighter red on hover */
+}
+

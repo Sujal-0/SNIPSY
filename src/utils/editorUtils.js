@@ -1,10 +1,11 @@
 export const handleEditorDidMount = (editor, monaco, setHeight) => {
+  // Define all custom themes with TRANSPARENT backgrounds
   monaco.editor.defineTheme("github-dark", {
     base: "vs-dark",
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#0d1117",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#c9d1d9",
     },
   });
@@ -14,7 +15,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#ffffff",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#24292f",
     },
   });
@@ -24,7 +25,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#282a36",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#f8f8f2",
     },
   });
@@ -34,7 +35,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#282c34",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#abb2bf",
     },
   });
@@ -44,7 +45,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#2e3440",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#d8dee9",
     },
   });
@@ -54,7 +55,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#002b36",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#839496",
     },
   });
@@ -64,7 +65,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#fdf6e3",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#657b83",
     },
   });
@@ -74,7 +75,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#272822",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#f8f8f2",
     },
   });
@@ -84,7 +85,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#002240",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#ffffff",
     },
   });
@@ -94,7 +95,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#0f1419",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#b3b1ad",
     },
   });
@@ -104,7 +105,7 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#282828",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#ebdbb2",
     },
   });
@@ -114,8 +115,36 @@ export const handleEditorDidMount = (editor, monaco, setHeight) => {
     inherit: true,
     rules: [],
     colors: {
-      "editor.background": "#212121",
+      "editor.background": "#00000000", // Transparent
       "editor.foreground": "#eeeeee",
+    },
+  });
+
+  // Also override the default themes to be transparent
+  monaco.editor.defineTheme("vs-dark", {
+    base: "vs-dark",
+    inherit: true,
+    rules: [],
+    colors: {
+      "editor.background": "#00000000", // Transparent
+    },
+  });
+
+  monaco.editor.defineTheme("light", {
+    base: "vs",
+    inherit: true,
+    rules: [],
+    colors: {
+      "editor.background": "#00000000", // Transparent
+    },
+  });
+
+  monaco.editor.defineTheme("hc-black", {
+    base: "hc-black",
+    inherit: true,
+    rules: [],
+    colors: {
+      "editor.background": "#00000000", // Transparent
     },
   });
 
