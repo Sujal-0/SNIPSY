@@ -40,7 +40,7 @@ body {
   transition: background-color 0.3s ease;
   border-radius: 24px;
   padding: 24px;
-  width: 50%;
+  width: 90%;
   max-width: 900px;
   margin: 16px auto 0 auto; 
   box-shadow: 20px 20px 0 0 black;
@@ -48,6 +48,12 @@ body {
   overflow-x: auto;
   overflow-y: auto;
   white-space: pre;
+}
+
+/* Export wrapper - full width by default */
+.export-wrapper {
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 /* Force the Monaco Editor to have transparent background */
@@ -90,12 +96,12 @@ body {
   color: #a6a6a6;
   border: 1px solid #444;
   border-radius: 8px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-family: "Black Ops One", system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
   transition: all 0.3s ease;
-  width: 150px;
+  width: 140px;
   text-align: center;
 }
 
@@ -116,8 +122,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 28px; /* moved down slightly */
+  gap: 12px;
+  margin-bottom: 28px;
+  padding: 0 10px;
 }
 
 .export-btn {
@@ -125,12 +132,12 @@ body {
   color: #a6a6a6;
   border: 1px solid #444;
   border-radius: 8px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-family: "Black Ops One", system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
   transition: all 0.3s ease;
-  width: 150px;
+  width: 140px;
   text-align: center;
   cursor: pointer;
 }
@@ -143,9 +150,10 @@ body {
   font-weight: 600;
   font-family: "Black Ops One", system-ui, sans-serif;
   color: #d5cea3;
-  margin: 12px auto 6px auto; /* more top margin, less bottom */
+  margin: 12px auto 6px auto;
   text-align: center;
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
 }
 
 .snippet-name::placeholder {
@@ -153,10 +161,158 @@ body {
 }
 
 .reset-btn {
-  background-color: #8B0000 !important; /* Dark red background */
+  background-color: #8B0000 !important;
 }
 
 .reset-btn:hover {
-  background-color: #A52A2A !important; /* Lighter red on hover */
+  background-color: #A52A2A !important;
 }
 
+/* ========== MOBILE RESPONSIVE STYLES ========== */
+
+/* Tablets and smaller (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .title {
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000,
+      4px 4px 0 #000, 5px 5px 0 #000, 6px 6px 0 #000, 7px 7px 0 #000,
+      8px 8px 0 #000;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .code-box {
+    width: 95%;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 0 0 black;
+    border: #000 solid 3px;
+  }
+
+  .top-dots {
+    margin-left: 15px;
+    gap: 6px;
+  }
+
+  .top-dots img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  .controls select,
+  .controls input,
+  .export-btn {
+    width: 120px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .snippet-name {
+    font-size: 14px;
+    width: 95%;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 5px;
+  }
+
+  .title {
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000,
+      4px 4px 0 #000, 5px 5px 0 #000;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .code-box {
+    width: 98%;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 0 black;
+    border: #000 solid 2px;
+    margin: 12px auto 0 auto;
+  }
+
+  .top-dots {
+    margin-top: -16px;
+    margin-left: 10px;
+    gap: 4px;
+  }
+
+  .top-dots img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .controls {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .controls select,
+  .controls input,
+  .export-btn {
+    width: calc(50% - 8px);
+    min-width: 100px;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .snippet-name {
+    font-size: 13px;
+    width: 98%;
+    margin: 10px auto 4px auto;
+  }
+}
+
+/* Very small phones (360px and below) */
+@media (max-width: 360px) {
+  .title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .code-box {
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0 0 black;
+  }
+
+  .top-dots img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .controls select,
+  .controls input,
+  .export-btn {
+    width: calc(50% - 6px);
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+}
